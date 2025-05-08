@@ -1,0 +1,306 @@
+@charset "UTF-8";
+/*
+ Green = #05bb84
+ Blue = #0131ae
+ */
+
+:root{
+    --verde: #05bb84;
+    --azul: #0131ae;
+    --branco: ;
+    --preto: ;
+    --cinzaClaro: ;
+    --cinzaEscur: ;
+}
+
+/*<editor-fold desc="Geral">*/
+p {
+
+}
+
+a {
+
+}
+
+a:hover {
+
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Corpo">*/
+/*<editor-fold desc="Corpo-Geral">*/
+/* Improved Interface Container */
+div#interface {
+    max-width: 1080px;
+    width: 90%; /* Responsive width, up to max-width */
+    background-color: #ffffff;
+    margin: 20px auto 20px auto; /* replaced negative margin with positive margin for spacing */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* softer and larger shadow for subtle depth */
+    padding: 20px; /* increased padding for content breathing room */
+    border-radius: 12px; /* rounded corners for modern look */
+    border: 1px solid #e0e0e0; /* light border for subtle definition */
+    transition: box-shadow 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+/* Optional: subtle hover effect */
+div#interface:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Make sure the container scales well on very small screens */
+@media (max-width: 480px) {
+    div#interface {
+        width: 95%;
+        padding: 15px;
+        margin: 15px auto;
+    }
+}
+
+
+/*</editor-fold>*/
+
+/*<editor-fold desc="Cabeçalho">*/
+header#cabecalho {
+    position: fixed; /* Fix the header at the top */
+    top: 0; /* Align it to the top of the page */
+    left: 0; /* Align it to the left */
+    right: 0; /* Align it to the right */
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background-color: white; /* Set a background color to avoid transparency */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Logo Styles */
+header#cabecalho img#icon {
+    position: absolute; /* Position the logo absolutely within the header */
+    width: 100px;
+    height: 100px;
+    top: 25px; /* Center the logo vertically */
+    left: 50px; /* Adjust the left position */
+}
+
+/* Title Styles */
+
+a#logo {
+    display: inline-flex; /* use inline-flex to fit content */
+    align-items: center;  /* align image and text vertically */
+    text-decoration: none; /* optional styling */
+    width: auto;  /* prevent full block width */
+    padding: 0;
+}
+
+a#logo img#icon, a#logo hgroup#logo-titulo {
+    pointer-events: none; /* disable hover/click on children so only anchor triggers */
+}
+
+header#cabecalho h1 {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    color: var(--azul);
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+    padding: 0;
+    margin: 40px 0 0 150px; /* Adjust margin to position the title */
+}
+
+header#cabecalho h2 {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 15px;
+    color: var(--verde);
+    padding: 0;
+    margin: 0 0 0 160px; /* Adjust margin to position the subtitle */
+}
+
+
+/*<editor-fold desc="Cabeçalho-Menu">*/
+nav#menu {
+    display: block;
+    position: inherit; /* Position the menu absolutely within the header */
+    top: 50px; /* Position below the header title */
+    left: 600px; /* Adjust the left position */
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+nav#menu li {
+    display: inline-flex;           /* Use inline-flex to keep inline behavior with flex features */
+    align-items: center;            /* Vertically center content */
+    justify-content: center;        /* Horizontally center content */
+    background-color: var(--verde);
+    padding: 10px;
+    margin: 3px;
+    transition: background-color 1s;
+    cursor: pointer;
+    text-align: center;             /* Center text inside anchor if multiline */
+    min-width: 80px;                /* Optional: set a min width for more consistent blocks */
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+nav#menu a {
+    color: white;
+    text-decoration: none; /* Ensure links have no underline */
+}
+
+nav#menu li:hover {
+    background-color: var(--azul);
+}
+
+nav#menu h1 {
+    display: none; /* Hide the main menu title */
+}
+
+nav#menu img.mIcone {
+    width: 20px;
+}
+
+/*</editor-fold>*/
+/*<editor-fold desc="Corpo">*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+section#corpo {
+    font-size: 14px;
+    color: #333;
+    padding: 20px;
+    margin-top: 160px; /* Add top margin greater than header height */
+    max-width: 1080px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: relative; /* Ensure position relative as requested */
+
+}
+
+/*<editor-fold desc="Corpo-Data e Horas">*/
+
+div#data {
+    text-align: center; /* Center the date heading */
+    margin-bottom: 20px; /* Space below the date section */
+}
+
+h2.date {
+    font-size: 24px; /* Larger font size for the date */
+    color: #007BFF; /* Bootstrap primary color */
+}
+
+div#laboratorio {
+    margin-bottom: 20px; /* Space below the laboratory section */
+}
+
+label {
+    font-weight: bold; /* Bold label for emphasis */
+}
+
+div#calendario {
+    display: block;
+    border-radius: 15px;
+    background: var(--verde);
+    padding: 20px;
+    margin-top: 10px;
+    box-shadow:  2px 10px rgba(0,0,0,0.1);
+    overflow-x:  auto;
+}
+
+th.diaSemana {
+    color: #ffffff;
+    border-radius: 15px;
+    background: var(--azul);
+}
+
+table {
+    width: 100%; /* Full width for the table */
+    border-collapse: collapse; /* Remove space between table cells */
+}
+
+th, td {
+    padding: 10px; /* Padding for table cells */
+    text-align: center; /* Center text in table cells */
+}
+
+th.diaSemana {
+    color: #ffffff; /* White text for header */
+    background: #007BFF; /* Bootstrap primary color */
+    border-radius: 10px; /* Rounded corners for header cells */
+}
+
+tbody#cedulas {
+    background: rgba(255,255,255,0.8);
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Zebra striping for better readability */
+}
+
+tr:hover {
+    background-color: #d1e7fd; /* Highlight row on hover */
+}
+
+td.new {
+    background-color: #ffffff; /* White background for new cells */
+    border: 1px solid #ccc; /* Light border for new cells */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+td.new:hover {
+    background-color: #e0f7fa; /* Light blue on hover */
+}
+
+td.marcada {
+    background-color: rgba(0,0,255,0.5);
+}
+
+td a {
+    color: white;
+    text-decoration: none;
+}
+
+td.marcada:hover {
+    scale:  1.1;
+    color: white;
+    border-radius: 10px;
+    background-color: var(--azul); /* Light blue on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    section#corpo {
+        padding: 10px; /* Reduced padding on smaller screens */
+    }
+
+    th, td {
+        font-size: 12px; /* Smaller font size for smaller screens */
+    }
+
+    h2.date {
+        font-size: 20px; /* Smaller date font size */
+    }
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Corpo-Rodapé">*/
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid  #606060;
+}
+
+footer#rodape p {
+    text-align: center;
+}
+
+/*</editor-fold>*/
+
+/*</editor-fold>*/
+/*</editor-fold>*/
+/*</editor-fold>*/

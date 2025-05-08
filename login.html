@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Area de Login</title>
+    <link rel="stylesheet" href="_css/bEstilos.css"/>
+    <style>
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<script language="javascript" src="_js/bFuncoes.js"></script>
+<body>
+<div id="interface">
+    <header id="cabecalho">
+        <a id="logo" href="index.html">
+            <img id="icon" src="_img/ber500.png" alt="Berzelius logo"/>
+            <hgroup id="logo-titulo">
+                <h1>Berzelius</h1>
+                <h2>Gestão Laboral</h2>
+            </hgroup>
+        </a>
+        <nav id="menu">
+            <h1>Menu Principal</h1>
+            <ul>
+                <li><a href="index.html">
+                    <img class="mIcone" src="_img/calendar_month_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="icone calendario"/>Calendario</a></li>
+                <li><a href="tabela.html">
+                    <img class="mIcone" src="_img/tabela-periodica.png" alt="icone tabela periodica" />Tabela Periodica</a></li>
+                <li><a href="preparo.html">
+                    <img class="mIcone" src="_img/reacao-quimica.png" alt="icone soluçoes quimicas" />Soluções Quimicas</a></li>
+                <li><a href="vidrarias.html">
+                    <img class="mIcone" src="_img/medicamento.png" alt="icone vidraria" />Vidrarias</a></li>
+                <li><a href="login.html">
+                    <img class="mIcone" src="_img/login_25dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="icone login"/>Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="corpo">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form action="#" method="post">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section>
+    <footer id="rodape">
+        <p>Copyright &copy; 2025 - by Carlos Nascimento & Deborah Castro<br/>
+    </footer>
+</div>
+    <script src="_js/login.js"></script>
+</body>
+</html>

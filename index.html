@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Berzelius / Horarios</title>
+    <link rel="stylesheet" href="_css/bEstilos.css"/>
+    <!--<link rel="stylesheet" href="_css/teste.css"/>-->
+</head>
+<script language="javascript" src="_js/bFuncoes.js"></script>
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <a id="logo" href="index.html">
+                <img id="icon" src="_img/ber500.png" alt="Berzelius logo"/>
+                <hgroup id="logo-titulo">
+                    <h1>Berzelius</h1>
+                    <h2>Gestão Laboral</h2>
+                </hgroup>
+            </a>
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li><a href="index.html">
+                        <img class="mIcone" src="_img/calendar_month_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="icone calendario"/>Calendario</a></li>
+                    <li><a href="tabela.html">
+                        <img class="mIcone" src="_img/tabela-periodica.png" alt="icone tabela periodica" />Tabela Periodica</a></li>
+                    <li><a href="preparo.html">
+                        <img class="mIcone" src="_img/reacao-quimica.png" alt="icone soluçoes quimicas" />Soluções Quimicas</a></li>
+                    <li><a href="vidrarias.html">
+                        <img class="mIcone" src="_img/medicamento.png" alt="icone vidraria" />Vidrarias</a></li>
+                    <li><a href="login.html">
+                        <img class="mIcone" src="_img/login_25dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="icone login"/>Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="corpo">
+            <div id="data">
+                <h2 class="date">Colocar um js para mostrar a data atual</h2>
+            </div>
+
+            <div id="laboratorio">
+                <label for="cLab">Você esta no Laboratorio de:</label>
+                <select name="tLab" id="cLab">
+                    <optgroup label="">
+                        <option value="anal">ANALÍTICA</option>
+                        <option value="fiqu">FÍSICO-QUÍMICA</option>
+                        <option value="org">ORGÂNICA</option>
+                        <option value="ali">TECNOLOGIA DE ALIMENTOS</option>
+                        <option value="proqu">PROCESSOS QUÍMICOS</option>
+                        <option value="mibi">MICROBIOLOGIA</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div id="calendario">
+                    <table class="dwm_main" id="week_main" data-resolution="60">
+                        <thead>
+                        <tr>
+                            <th class="diaSemana">Período</th>
+                            <th class="diaSemana" data-date="2025-04-06" style="width: 14.2857%;">dom<br>js mes dia</th>
+                            <th class="diaSemana" data-date="2025-04-07" style="width: 14.2857%;">seg<br>js mes dia</th>
+                            <th class="diaSemana" data-date="2025-04-08" style="width: 14.2857%;">ter<br>js mes dia</th>
+                            <th class="diaSemana" data-date="2025-04-09" style="width: 14.2857%;">qua<br>js mes dia</th>
+                            <th class="diaSemana" data-date="2025-04-10" style="width: 14.2857%;">qui<br>js mes dia</th>
+                            <th class="diaSemana" data-date="2025-04-11" style="width: 14.2857%;">sex<br>js mes dia</th>
+                            <th class="diaSemana" data-date="2025-04-12" style="width: 14.2857%;">sáb<br>js mes dia</th>
+                        </tr>
+                        </thead>
+                        <tbody id="cedulas">
+                        <tr>
+                            <th>MANHÃ  - 07:30 - 08:20 h</th>
+                            <td class="new"></td>
+                            <td class="marcada"><a href="aula.html"><p>Prf. Zé<br/>IQ0690<br/>Tema</p></a></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                        </tr>
+                        <tr>
+                            <th>MANHÃ  - 08:20 - 09:10 h</th>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                        </tr>
+                        <tr>
+                            <th>MANHÃ  - 09:10 - 10:00 h</th>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                        </tr>
+                        <tr>
+                            <th>MANHÃ  - 10:20 - 11:10 h</th>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                        </tr>
+                        <tr>
+                            <th>MANHÃ  - 11:10 - 12:00 h</th>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                        </tr>
+                        <tr>
+                            <th>TARDE - 13:00 - 14:00 h</th>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                        </tr>
+                        <tr>
+                            <th>TARDE - 14:00 - 15:00 h</th>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                        </tr>
+                        <tr>
+                            <th>TARDE - 15:00 - 16:00 h</th>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                        </tr>
+                        <tr>
+                            <th>TARDE - 16:00 - 17:00 h</th>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                        </tr>
+                        <tr>
+                            <th>TARDE - 17:00 - 18:00 h</th>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                        </tr>
+                        <tr>
+                            <th>NOITE - 18:00 - 19:00 h</th>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                        </tr>
+                        <tr>
+                            <th>NOITE - 19:00 - 20:00 h</th>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                        </tr>
+                        <tr>
+                            <th>NOITE - 20:00 - 21:00h</th>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                        </tr>
+                        <tr>
+                            <th>NOITE - 21:00 - 22:00 h</th>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                        </tr>
+                        <tr>
+                            <th>NOITE - 22:00 - 22:45 h</th>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                            <td class="new"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+            </div>
+        </section>
+        <footer id="rodape">
+            <p>Copyright &copy; 2025 - by Carlos Nascimento & Deborah Castro<br/>
+        </footer>
+    </div>
+    <script src="_js/index.js"></script>
+</body>
+</html>
